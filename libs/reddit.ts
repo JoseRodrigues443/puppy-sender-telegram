@@ -1,8 +1,15 @@
-const randomPuppy = require('random-puppy');
+const { getImage } = require('random-reddit')
 
-const getRedditImage = (subreddit: string): string =>
+const getRedditImage = async (subreddit: string): Promise<string> =>
 {
-    return randomPuppy(subreddit)
+    let image = 'https://cdn.searchenginejournal.com/wp-content/uploads/2015/11/2015-11-11_10-15-49.jpg'
+    try {
+        image = await getImage(subreddit)
+        console.log(image);
+    } catch (error) {
+        console.log(error)
+    }
+    return image;
 }
 
 export default getRedditImage;

@@ -21,6 +21,7 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "random-puppy": "^1.1.0",
+    "random-reddit": "^2.0.3",
     "telegraf": "^4.5.2"
   },
   "devDependencies": {
