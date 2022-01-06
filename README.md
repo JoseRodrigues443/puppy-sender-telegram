@@ -26,6 +26,10 @@ Also we can request images from specific a subReddit (use this for good, not evi
 
 ![As seen in this image](./docs/img/redditExample.png)
 
+You can request to bot to get out of the project with the `/quit`command:
+
+![As seen in this image](./docs/img/quitExample.png)
+
 ## How to Setup
 
 ### Get bot token
